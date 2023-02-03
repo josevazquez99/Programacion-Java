@@ -6,21 +6,18 @@ public class Ejercicio15 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int numero = 0;
+		System.out.println("Introduce un numero");
+		String valor = "";
 		int suma = 0;
-		String valorIntroducido="";
-		while (!valorIntroducido.equals("fin")) {
+		valor = sc.nextLine();
+		while (!valor.equals("fin")) {
+			suma += Integer.valueOf(valor);
 			System.out.println("Introduce un numero");
-			valorIntroducido = sc.nextLine();
-			if (!valorIntroducido.equals("fin")) {
-				numero = Integer.valueOf(valorIntroducido);
-				suma += numero;
-
-			}
+			valor = sc.nextLine();
 
 		}
+		System.out.println("La suma es " + suma);
 
-		System.out.println("La suma es " +suma);
 	}
 
 }

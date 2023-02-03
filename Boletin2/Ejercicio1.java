@@ -3,7 +3,7 @@ package Boletin2;
 public class Ejercicio1 {
 
 	public static void main(String[] args) {
-		System.out.println(numeroSolucionesEcuacionSegundoGrado(8, 4, 4));
+		System.out.println(numeroSolucionesEcuacionSegundoGrado(6, -5, 1));
 	}
 
 	public static String numeroSolucionesEcuacionSegundoGrado(int a, int b, int c) {
